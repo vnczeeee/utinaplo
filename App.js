@@ -1,20 +1,22 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { View, StyleSheet } from 'react-native';
+import Bejegyzes from './components/bejegyzes';
+
+const bejegyzesek = [
+  { id: '1', cim: 'Első nap Rómában', hely: 'Róma, Olaszország', leiras: 'Megnéztük a Colosseumot.' },
+  { id: '2', cim: 'Kirándulás a Balatonnál', hely: 'Balaton, Magyarország' },
+  { id: '3', cim: 'Kávézás Bécsben', hely: 'Bécs, Ausztria', leiras: 'A Sacher-torta tényleg finom.' },
+];
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      {bejegyzesek.map((b) => (
+        <Bejegyzes key={b.id} cim={b.cim} hely={b.hely} leiras={b.leiras} />
+      ))}
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
+  container: { flex: 1, paddingTop: 60, paddingHorizontal: 16 },
 });
