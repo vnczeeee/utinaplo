@@ -4,7 +4,7 @@ import Bejegyzes from './components/bejegyzes';
 const bejegyzesek = [
   { id: '1', cim: 'Első nap Rómában', hely: 'Róma, Olaszország', leiras: 'Megnéztük a Colosseumot.' },
   { id: '2', cim: 'Kirándulás a Balatonnál', hely: 'Balaton, Magyarország' },
-  { id: '3', cim: 'Kávézás Bécsben', hely: 'Bécs, Ausztria', leiras: 'A Sacher-torta tényleg finom.' },
+  { id: '3', cim: 'Kávézás Bécsben', hely: 'Bécs, Ausztria'},
 ];
 
 export default function App() {
@@ -18,5 +18,5 @@ export default function App() {
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, paddingTop: 60, paddingHorizontal: 16 },
+  container: { flex: 1, paddingTop: 60 },
 });

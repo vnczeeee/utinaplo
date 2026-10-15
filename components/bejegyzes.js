@@ -11,8 +11,8 @@ export default function Bejegyzes({ cim, hely, leiras }) {
 }
 
 const styles = StyleSheet.create({
-  kartya: { padding: 12, marginBottom: 12, backgroundColor: '#eee', borderRadius: 8 },
-  cim: { fontSize: 18, fontWeight: 'bold' },
+  kartya: { padding: 12, marginBottom: 12},
+  cim: { fontSize: 18},
   hely: { fontSize: 14, color: '#555' },
   leiras: { marginTop: 6 },
 });
